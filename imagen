@@ -1,0 +1,23 @@
+#Creación de la libreria "tkinter"
+
+from tkinter import *
+
+root=Tk()
+
+#Creación de la clase y el constructor
+
+miFrame= Frame(root, width=500, height=400)
+
+miFrame.pack()
+
+#Insercción de una imagen
+miImagen=PhotoImage(file="imagen.png")
+
+label = Label(miFrame, image=miImagen).place(x=8, y=8)
+
+#Creación del label
+miLabel = Label(miFrame, text="Hola a todos", fg="black", font=("Comic Sans MS", 15))
+miLabel.place(x=0, y=0)
+
+
+root.mainloop()
