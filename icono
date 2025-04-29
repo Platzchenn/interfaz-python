@@ -1,0 +1,21 @@
+from tkinter import *
+
+raiz = Tk()
+
+# Asignación de métodos
+raiz.title("ventana de pruebas")
+
+# Código para que no se pueda cambiar de tamaño la ventana
+raiz.resizable(0, 0)
+
+# Código introducción icono aplicación
+raiz.iconbitmap("cuadro.ico")
+
+#Asignar dimensiones de la ventana
+
+raiz.geometry("600x300")
+
+#Asignar color de la ventana
+raiz.config(background="gray")
+
+raiz.mainloop()
